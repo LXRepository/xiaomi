@@ -1,0 +1,19 @@
+
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+			{"img":"/imgs/s1.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s2.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s3.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s4.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s5.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s1.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s2.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s3.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s4.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"},
+			{"img":"/imgs/s5.png", "title":"全面屏2.0，5.99 大屏", "price":"3299元起"}
+		]
+	}
+}

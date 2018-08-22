@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon">
+	<title>小米账号-注册</title>
+	<link rel="stylesheet" type="text/css" href="/css/regist.css">
+</head>
+<body>
+	<div class="logo-title">
+		<div class="innner">
+			<img src="/imgs/loginlogo.png">
+		</div>
+	</div>
+	<div class="login">
+		<div class="innner">
+			<div class="loginright">
+				<h1>
+					<a href="login.html" class="logo-text">账号登录</a>|<a href="javascript:void(0)" class="logo-pic">立即注册</a>
+				</h1>
+				<form role="form" action="" method="post" class="login-form" onsubmit="return false">
+					<div class="form-group">
+						<input type="text" required name="phonenumber" placeholder="手机号码" class="form-username form-phone" id="form-tel">
+						<span class="ddanger1">!请填写11位有效的手机号码</span>
+					</div>
+					<div class="form-group">
+						  <input id="cen-code" required name="number" type="text" placeholder="请输入验证码"/>
+                            <button id="getCodeBtn" class="">获取验证码</button>
+                            <span class="ddanger2">!验证码不能为空</span>
+					</div>
+					<div class="form-group">
+						<input type="text" required name="username" placeholder="用户名" class="form-username form-control" id="form-username">
+						<span class="ddanger3">!3-20位,中文、字母、数字、下划线,以中文或字母开头</span>
+					</div>
+					<div class="form-group">
+						<input type="password" required name="password" placeholder="密码" class="form-password form-control" id="form-password">
+						<span class="ddanger4">!6-20位英文（区分大小写）、数字、字符的组合</span>
+					</div>
+					<div class="form-group3">
+							<div class="alert alert-danger"></div>
+						</div>
+						<button type="submit" class="btn btn-primary">注册</button>
+					</form>
+					<div class="other-pic" >
+						<img src="/imgs/other.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot-dow">
+			<img src="/imgs/downlogo.png">
+		</div>
+		<script src="../lib/requirejs/require.js" data-main="/js/register"></script>
+	</body>
+	</html>

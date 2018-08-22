@@ -1,0 +1,18 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list" : [
+				{"id": 11, "img":"/imgs/tj1.jpg", "title":"红米Note 5A 全网通版 3GB", "price":"1200","good":"1.7万人好评"},
+				{"id": 2, "img":"/imgs/tj2.jpg", "title":"红米Note 5 全网通版 4GB", "price":"3400","good":"1.7万人好评"},
+				{"id": 3, "img":"/imgs/tj3.jpg", "title":" 70迈高清倒车影像摄像头 ", "price":"2500","good":"1.7万人好评"},
+				{"id": 4, "img":"/imgs/tj4.jpg", "title":"小米商旅多功能双肩包 ", "price":"3780","good":"1.7万人好评"},
+				{"id": 5, "img":"/imgs/tj5.jpg", "title":"黑鲨游戏手柄 ", "price":"1800","good":"1.7万人好评"},
+				{"id": 6, "img":"/imgs/tj1.jpg", "title":"红米Note 5A 全网通版 3GB", "price":"1200","good":"1.7万人好评"},
+				{"id": 7, "img":"/imgs/tj2.jpg", "title":"红米Note 5 全网通版 4GB", "price":"3400","good":"1.7万人好评"},
+				{"id": 8, "img":"/imgs/tj3.jpg", "title":" 70迈高清倒车影像摄像头 ", "price":"2500","good":"1.7万人好评"},
+				{"id": 9, "img":"/imgs/tj4.jpg", "title":"小米商旅多功能双肩包 ", "price":"3780","good":"1.7万人好评"},
+				{"id": 10, "img":"/imgs/tj5.jpg", "title":"黑鲨游戏手柄 ", "price":"1800","good":"1.7万人好评"}
+		]
+	}
+}

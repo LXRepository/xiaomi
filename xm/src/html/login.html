@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon">
+	<title>小米账号-登录</title>
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+	<div class="logo-title">
+		<div class="innner">
+			<img src="/imgs/loginlogo.png">
+		</div>
+	</div>
+	<div class="login">
+		<div class="innner">
+			<div class="loginright">
+				<h1>
+					<a href="javascript:void(0)" class="logo-text">账号登录</a>|<a href="register.html" class="logo-pic">立即注册</a>
+				</h1>
+				<form role="form" action="" method="get" class="login-form" onsubmit="return false">
+					<div class="form-group">
+						<input type="text" required name="username" placeholder="邮箱/手机号码/小米ID" class="form-username form-control" id="form-username">
+					</div>
+					<div class="form-group">
+						<input type="password" required name="password" placeholder="密码" class="form-password form-control" id="form-password">
+					</div>
+					<div class="form-group3">
+							<div class="alert alert-danger"></div>
+						</div>
+						<button type="submit" class="btn btn-primary">登录</button>
+					</form>
+					<p>
+						<span class="other-left"><a href="register.html">手机短信登录/注册</a></span>
+						<span class="other-right"><a href="register.html">立即注册</a>|<a href="">忘记密码</a></span>
+					</p>
+					<div class="other-pic">
+						<img src="/imgs/other.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot-dow">
+			<img src="/imgs/downlogo.png">
+		</div>
+		<script src="../lib/requirejs/require.js" data-main="/js/login"></script>
+	</body>
+	</html>

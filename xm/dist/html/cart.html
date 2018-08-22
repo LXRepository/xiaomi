@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon">
+	<title>我的购物车-小米商城</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/cart.css">
+	<link rel="stylesheet" type="text/css" href="/lib/icon-font/iconfont.css">
+</head>
+<body>
+    <div class="mb">
+        <div class="alert">
+            <h1>确定删除吗？</h1>
+            <span class="no">取消</span>
+            <span class="yes">确定</span>
+        </div>
+    </div>
+    
+	<div class="mine-cart">
+		<div class="inner">
+			<img src="/imgs/logo.jpg">
+			<h1>我的购物车</h1>
+			<p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+			<div class="log-reg">
+				<a class="log" href="login.html">登录</a> |
+				<a class="reg" href="register.html">注册</a>
+			</div>
+		</div>
+    </div>
+    <div class="empty">
+        <div class="inner">
+            <img src="/imgs/cart-empty.png">
+            <div class="e-bt">
+                <h1>您的购物车还是空的 !</h1>
+                <h2>登录后将显示您之前加入的商品</h2>
+                <span class="e-log">立即登陆</span>
+                <span class="e-shop">马上去购物</span>
+            </div>
+        </div>
+    </div>
+    <div class="session">
+    	<div class="inner">
+    		<div class="title">
+    			<div class="check">
+    				<img src="/imgs/check.png">
+    				<em>√</em>
+    				<span>全选</span>
+    			</div>
+    			<div class="name">商品名称</div>
+    			<div class="price">单价</div>
+    			<div class="number">数量</div>
+    			<div class="pay">小计</div>
+    			<div class="delet">操作</div>
+    		</div>
+            <div class="lists"></div>
+            <script type="text/html" id="cart-list">
+                {{each products prod}}
+                <div class="list">
+                    <div class="checkk">
+                        <img src="/imgs/check.png">
+                        <em>√</em>
+                    </div>
+                    <div class="thisid" style="display: none;">{{prod.id}}</div>
+                    <div class="pic"><img src="{{prod.img}}"></div>
+                    <div class="name"><a href="detail.html" target="blank">{{prod.title}}</a></div>
+                    <div class="price">{{prod.price}}元</div>
+                    <div class="numbers">
+                        <span class="sub">-</span>
+                        <span class="number">{{prod.amount}}</span>
+                        <span class="add">+</span>
+                    </div>
+                    <div class="pay">{{(prod.price * prod.amount)}}元</div>
+                    <div class="delet">X</div>
+                </div>
+                {{/each}}
+            </script>
+
+            <div class="go-pay">
+             <div class="shoping">
+                <a href="../index.html">继续购物</a>|
+            </div>
+            <div class="calculate">
+                共 <span class="calcu-all">1</span> 件商品，已选择 <span class="calcu-choose">1</span> 件
+            </div>
+            <div class="all-pay">
+                <a href="confirm.html">去结算</a>
+            </div>
+            <div class="all-cost">
+                合计： <span>0</span>元
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="recom">
+    <div class="also-buy">
+        <span>买购物车中商品的人还买了</span>
+    </div>
+    <div class=inner>
+      <div class="s-top">
+        <span id="leftssp">
+            <i  class="iconfont icon-sjt"></i>
+        </span>
+        <span id="righssp">
+            <i class="iconfont icon-zjt"></i>
+        </span>
+    </div>
+    <div class="s-lb" id="s-lb">
+       <script id="hotsale" type="text/html">
+        {{each list prod}}
+        <li>    
+            <div class="a">
+                <a href="detail.html"></a>
+                <span class="id" style="display: none;">{{prod.id}}</span>
+                <img src="{{prod.img}}">
+                <p>{{prod.title}}</p>
+                <h4>{{prod.price}}</h4>
+                <h3>{{prod.good}}</h3>
+                <span>加入购物车</span>
+            </div>
+        </li> 
+        {{/each}}
+    </script>
+    <ul id="lbuls">
+    </ul>
+</div>
+</div>
+
+<script type="text/javascript">
+  var lefsspDOM = document.getElementById('leftssp');
+  var rigsspDOM = document.getElementById('righssp');
+  var ulsDOM = document.getElementById('lbuls');
+
+  lefsspDOM.onclick = function () {
+   ulsDOM.style.marginLeft = -1240+'px';
+}
+rigsspDOM.onclick = function () {
+   ulsDOM.style.marginLeft = 0+'px';
+}
+</script>
+</div>
+<div class="footer"></div>
+<div class="f-dow">
+
+</div>
+<script src="../lib/requirejs/require.js" data-main="/js/cart"></script>
+
+</body>
+</html>
