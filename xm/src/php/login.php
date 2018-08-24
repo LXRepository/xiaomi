@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin:*");
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 
-	mysql_connect("localhost:3306", "root", "");
+	mysql_connect("111.231.197.212", "root", "root");
 	
 	mysql_query("set character set utf8");
 	mysql_query("set names utf8");

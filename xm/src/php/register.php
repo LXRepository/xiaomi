@@ -5,7 +5,7 @@
 	$tel = $_POST["tel"];
 
 	
-	mysql_connect("localhost:3306", "root", "");
+	mysql_connect("111.231.197.212", "root", "root");
 	
 	mysql_select_db("db");
 	
