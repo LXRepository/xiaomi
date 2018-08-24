@@ -6,10 +6,10 @@
     min-width: 1226px;
     margin: 0 auto;
     max-width: 1226.5px;
+    overflow:hidden;
 }
 .head-nav {
     float: left;
-    width: 100%;
     background-color: #333333;
     .nav-lef {
         float: left;
@@ -122,7 +122,6 @@
 /*关于轮播图部分*/
 .banner {
     float: left;
-    width: 100%;
     position: relative;
     .logo {
         float: left;
@@ -444,7 +443,6 @@
 /*轮播图*/
 .lb {
     float: left;
-    width: 100%;
     .lb-top {
         .lef-menu {
             float: left;
@@ -728,7 +726,6 @@
 /*明星产品*/
 .stars {
     float: left;
-    width: 100%;
     margin: 40px 0;
     .s-top {
         width: 100%;
@@ -813,7 +810,6 @@
 /*关于家电*/
 .home-goods {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     padding-top: 70px;
     .s-top {
@@ -1099,7 +1095,6 @@
 /* 关于智能*/
 .intell {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     padding-top: 30px;
     .s-top {
@@ -1406,7 +1401,6 @@
 /*关于搭配*/
 .tie-in {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     padding-top: 30px;
     .s-top {
@@ -1711,7 +1705,6 @@
 /*关于配件*/
 .parts {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     padding-top: 30px;
     .s-top {
@@ -2018,7 +2011,6 @@
 /*关于周边*/
 .peri {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     padding-top: 30px;
     .s-top {
@@ -2325,7 +2317,6 @@
 /*为你推荐*/
 .recom {
     float: left;
-    width: 100%;
     padding: 40px 0;
     background-color: #f5f5f5;
     .s-top {
@@ -2430,7 +2421,6 @@
 /*热评产品*/
 .hot-goods {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     .s-top {
         width: 100%;
@@ -2522,7 +2512,6 @@
 /*图书内容*/
 .content {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     padding-top: 40px;
     .s-top {
@@ -2676,7 +2665,6 @@
 关于视频/**/
 .vedio {
     float: left;
-    width: 100%;
     background-color: #f5f5f5;
     padding: 40px 0 60px 0;
     .s-top {
@@ -2770,7 +2758,6 @@
 /*脚步脚步*/
 .footer {
     float: left;
-    width: 100%;
     background-color: #fff;
     .f-top {
         width: 100%;
@@ -2875,7 +2862,6 @@
 }
 .f-dow {
     float: left;
-    width: 100%;
     padding: 30px 0;
     font-size: 12px;
     background-color: #f5f5f5;
