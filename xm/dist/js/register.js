@@ -13,7 +13,7 @@ require(["config"], function(){
 					_this.text("获取验证码");
 					clearInterval(timer);
 					num = 30;
-					return;
+					return;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 				}
 				_this.text(num-- + " s后重新获取");
 			}, 1000);
@@ -53,35 +53,41 @@ require(["config"], function(){
 			e.preventDefault();
 
 			var _username = $("#form-username").val(),
+			_ulen = _username.length>2,
 			_password = $("#form-password").val(),
-			_tel = $("#form-tel").val();
+			_plen = _password.length>5,
+			_tel = $("#form-tel").val(),
+			_tlen = _tel.length>10;
+			if (_ulen&&_tlen&&_plen) {
+				var xhr = new XMLHttpRequest();
 
-			
-			var xhr = new XMLHttpRequest();
+				xhr.open("POST", "http://localhost/project/src/php/register.php", true);
 
-			xhr.open("POST", "http://localhost/project/src/php/register.php", true);
+				var queryString = `username=${_username}&password=${_password}&tel=${_tel}`;
+				xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+				xhr.send(queryString);
 
-			var queryString = `username=${_username}&password=${_password}&tel=${_tel}`;
-			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-			xhr.send(queryString);
+				xhr.onreadystatechange = function(){
+					if (xhr.readyState === 4) { 
+						if (xhr.status === 200) { 
 
-			xhr.onreadystatechange = function(){
-				if (xhr.readyState === 4) { 
-					if (xhr.status === 200) { 
+							var data = xhr.responseText;
+							data = JSON.parse(data);
 
-						var data = xhr.responseText;
-						data = JSON.parse(data);
-						
-						console.log(data)
-						if (data.res_code === 1) {
-							location = "/html/login.html";
-						} else {
-							$(".form-group3").css("display","block");
-							$(".alert-danger").text("请正确填写！");
+							console.log(data)
+							if (data.res_code === 1) {
+								location = "/html/login.html";
+								
+
+							} else {
+								$(".form-group3").css("display","block");
+								$(".alert-danger").text("请正确填写！");
+							}
 						}
 					}
 				}
 			}
+
 		});
 
  function parseDom(arg) {

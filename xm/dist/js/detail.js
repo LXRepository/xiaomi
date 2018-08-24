@@ -1,5 +1,17 @@
 require(["config"], function(){
 	require(["jquery","template","cookie","load","bootstrap","city","citydata","main"], function($){
+
+		$(".gocart").on("click",function(e){
+			if(null!=query)
+			{
+				var names = decodeURIComponent(location.search.substring(1)).split('&');
+				var name = names[0]
+				$(this).attr("href","/html/cart.html?"+name);
+			}
+		});
+
+
+
 		$(document).ready(function(){
 			$(".r-choose li")[0].className="active";
 			$(".r-color li")[0].className="active";

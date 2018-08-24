@@ -17,8 +17,9 @@ require(["config"], function(){
 				dataType : "json", 
 				success : function(resData){ 
 					if (resData.res_code === 1) { 
+						var name =  encodeURIComponent(resData.res_body.username) 
+						location="/index.html?"+name;
 						
-						location="/index.html?"+resData.res_body.username;
 					} else {
 						$(".form-group3").css("display","block");
 						$(".alert-danger").text("用户名或密码错误!");

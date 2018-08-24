@@ -1,6 +1,38 @@
 require(["config"], function(){
 	require(["jquery","template","cookie","load","xm_carousel","bootstrap"], function($,template){
+		//获取用户名
+		$(function(){
+			
+			var query = (location.search.length > 0 ? location.search.substring(1) : null);
+			if(null!=query)
+			{
+				var names = decodeURIComponent(location.search.substring(1)).split('&');
+				var name = names[0]
+				
+				if (names[0] == "null") {
+					$(".unlogoin").show();
+					$(".logoin").hide();
+					$(".myname").html("请先登录!")
+					$(".mycart").html("成功后会显示您购物车的物品")
+				}
+				else{
+					$(".unlogoin").hide();
+					$(".logoin").show();
+					$(".logoin").html(name+" "+"欢迎您！")
+					$(".myname").html("亲爱的"+name+"!")
+					$(".mycart").html("您的购物车还是空的 !")
+				};
+			}else{
+				$(".unlogoin").show();
+				$(".logoin").hide();
+			}
+			
+			
+		});
+	
+
 		
+
 
 
 //渲染热销商品
@@ -159,6 +191,17 @@ function exist(id, array) {
 	return -1;
 };
 
+//点击logo返回首页并获得物品数量
+		$(".backhome").on("click",function(e){
+			var query = (location.search.length > 0 ? location.search.substring(1) : " ");
+			if(null!=query)
+			{
+				var names = decodeURIComponent(location.search.substring(1)).split('&');
+				var name = names[0]
+			    var numu = $(".calcu-all").text();
+			$(this).attr("href","/index.html?"+name+"&"+numu);
+		}
+		});
 
 
 })

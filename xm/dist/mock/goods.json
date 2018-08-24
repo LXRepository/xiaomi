@@ -1,0 +1,56 @@
+
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body": {
+		"list": [
+			[
+				{"tltles":"家居","lists":[
+					{"img":"imgs/jd1.png", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd2.png", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd3.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd4.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd5.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd6.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd7.jpg", "title":"小米电视4C 43英寸"}
+				]}
+			],
+			[
+				{"tltles":"电脑","lists":[
+					
+					{"img":"imgs/jd3.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd5.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd2.png", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd6.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd4.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd7.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd8.jpg", "title":"小米电视4C 43英寸"}
+				]}
+			],
+			[
+				{"tltles":"电视影音","lists":[
+					{"img":"imgs/jd2.png", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd5.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd6.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd1.png", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd7.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd3.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd4.jpg", "title":"小米电视4C 43英寸"}
+				]}
+			],
+			[
+				{"tltles":"热门","lists":[
+					{"img":"imgs/jd4.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd5.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd6.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd1.png", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd2.png", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd3.jpg", "title":"小米电视4C 43英寸"},
+					{"img":"imgs/jd7.jpg", "title":"小米电视4C 43英寸"}
+				]}
+			]
+			
+		]
+
+	}
+}

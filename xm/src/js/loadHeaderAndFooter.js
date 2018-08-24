@@ -16,7 +16,7 @@ define(["jquery"],function ($) {
 				else{
 					$(".unlogoin").hide();
 					$(".logoin").show();
-					$(".logoin li").html(name+" "+"欢迎您！")
+					$(".logoin .welcome").html(name+" "+"欢迎您！")
 				};
 				if (names.length<=1) {
 					$(".nums").text("购物车(0)")

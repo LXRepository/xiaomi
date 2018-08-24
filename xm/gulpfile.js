@@ -24,7 +24,7 @@ gulp.task("js", function(){
 		.pipe(gulp.dest("dist/js"))
 		.pipe(connect.reload()); // 浏览器自动刷新
 });
-// 复制 HTML 文件到 dist 目录下，让HTML页面修改后能够重新加载
+// 复制 php 文件到 dist 目录下，让HTML页面修改后能够重新加载
 gulp.task("php", function(){
 	gulp.src("src/php/**/*.php")
 		.pipe(gulp.dest("dist/php"))

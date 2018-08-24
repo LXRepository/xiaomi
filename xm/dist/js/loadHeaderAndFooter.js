@@ -3,22 +3,53 @@ define(["jquery"],function ($) {
 		
 		$(function(){
 			
-
 			var query = (location.search.length > 0 ? location.search.substring(1) : null);
 			if(null!=query)
 			{
-				var name = location.search.substring(1);
-				$(".unlogoin").hide();
-				$(".logoin").show();
-				$(".logoin li").html(name+"欢迎您！")
+				var names = decodeURIComponent(location.search.substring(1)).split('&');
+				var name = names[0]
+				console.log(name)
+				if (names[0] == "null") {
+					$(".unlogoin").show();
+					$(".logoin").hide();
+				}
+				else{
+					$(".unlogoin").hide();
+					$(".logoin").show();
+					$(".logoin .welcome").html(name+" "+"欢迎您！")
+				};
+				if (names.length<=1) {
+					$(".nums").text("购物车(0)")
+				    $(".cart-goods p").text("购物车已有0件商品,立即前往~")
+				}
+				else{
+				    var num = names[1];
+					$(".nums").text("购物车"+"("+num+")")
+				    $(".cart-goods p").text("购物车已有 "+num+" 件商品,立即前往~")
+				}
+				
+				
 			}else{
+				$(".nums").text("购物车(0)")
+				$(".cart-goods p").text("购物车已有0件商品,立即前往~")
 				$(".unlogoin").show();
 				$(".logoin").hide();
 			}
 			
 			
-		})
 		});
+		$(".backhome").on("click",function(e){
+			var query = (location.search.length > 0 ? location.search.substring(1) : null);
+			$(this).attr("href","/index.html?"+query);
+
+		});
+		$(".gocart").on("click",function(e){
+			var query = (location.search.length > 0 ? location.search.substring(1) : null);
+			$(this).attr("href","/html/cart.html?"+query);
+
+		});
+	});
+	
 		$(".banner").load("/html/include/banner.html",function(){
 			$(".search-lef :text").keyup(function(){
 				const txt = $(this).val();
@@ -70,6 +101,10 @@ define(["jquery"],function ($) {
 						$(".search-more").hide();
 					});
 				};
+			});
+			$(".backhome").on("click",function(e){
+				var query = (location.search.length > 0 ? location.search.substring(1) : null);
+				$(this).attr("href","/index.html?"+query);
 			});
 
 		});

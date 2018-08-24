@@ -7,21 +7,29 @@ require(["config"], function(){
 			if(null!=query)
 			{
 				var names = decodeURIComponent(location.search.substring(1)).split('&');
-				var name = names[0];
-				$(".unlogoin").hide();
-				$(".logoin").show();
-				$(".logoin").html(name+" "+"欢迎您！")
-				$(".myname").html("亲爱的"+name+"!")
-				$(".mycart").html("您的购物车还是空的 !")
+				var name = names[0]
+				
+				if (names[0] == "null") {
+					$(".unlogoin").show();
+					$(".logoin").hide();
+					$(".myname").html("请先登录!")
+					$(".mycart").html("成功后会显示您购物车的物品")
+				}
+				else{
+					$(".unlogoin").hide();
+					$(".logoin").show();
+					$(".logoin").html(name+" "+"欢迎您！")
+					$(".myname").html("亲爱的"+name+"!")
+					$(".mycart").html("您的购物车还是空的 !")
+				};
 			}else{
 				$(".unlogoin").show();
 				$(".logoin").hide();
-				$(".myname").html("请先登录!")
-				$(".mycart").html("成功后会显示您购物车的物品")
 			}
 			
 			
 		});
+	
 
 		
 

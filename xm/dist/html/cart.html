@@ -19,23 +19,24 @@
     
 	<div class="mine-cart">
 		<div class="inner">
-			<img src="/imgs/logo.jpg">
+			<a href="#" class="backhome"><img src="/imgs/logo.jpg"></a>
 			<h1>我的购物车</h1>
 			<p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
-			<div class="log-reg">
+			<div class="log-reg unlogoin" style="display: block;">
 				<a class="log" href="login.html">登录</a> |
 				<a class="reg" href="register.html">注册</a>
 			</div>
+            <div class="logoin" style="color:#ff6700; display: none;float: right;line-height: 102px;font-size: 20px" >
+                
+            </div>
 		</div>
     </div>
     <div class="empty">
         <div class="inner">
             <img src="/imgs/cart-empty.png">
             <div class="e-bt">
-                <h1>您的购物车还是空的 !</h1>
-                <h2>登录后将显示您之前加入的商品</h2>
-                <span class="e-log">立即登陆</span>
-                <span class="e-shop">马上去购物</span>
+                <h1 class="myname" style="color: #ff6700"></h1>
+                <h1 class="mycart"></h1>
             </div>
         </div>
     </div>
